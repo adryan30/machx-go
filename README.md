@@ -1,8 +1,40 @@
-Nome do software: MachX
-Contato do desenvolvedor: Nome e e-mail do(s) desenvolvedor(es) 
-Endereço: Endereço da UFAL Arapiraca 
-Primeiro ano disponível: XXXX
-Hardware sugerido: Aqui um exemplo do que você deve colocar aqui: Processador 2.6 GHz Intel Core i7, com 16 GB 1600 MHz DDR3 e HD 1TB. No entanto, todas as simulações são realizadas em um modelo de computador SGI Rackable Standard-Depth Servers, com 56 núcleos em 2 soquetes de 2,00 GHz Intel (R) Xeon (R) CPU E5-2660 v4,1352 MHz 256 GB de memória DDR3 (32 × 8 GB) e sistema operacional Linux.
-Software necessário: Aqui um exemplo: Todo o projeto está rodando em Ubuntu 16.04 (recomendado) ou 18.04.
-Disponibilidade: Disponível no XXXXXX. As bases de dados utilizadas também devem estar disponíveis.  
-Custo: Todas as ferramentas utilizadas são gratuitas.
+#  MachX Go :mechanical_arm:
+##  O que é o MachX GO?
+MachX Go é a nossa super solução para facilitar as nossas entregas da maneira mais rápida e inteligente. Desenvolvido e pensado para o nosso cliente, nosso sistema oferece um cálculo, super preciso, momentos antes da entrega, otimizando as rotas da melhor maneira possível. Melhor? Só na velocidade da luz.
+
+````
+"Work smarter, not harder" - Timo Kiander
+````
+
+## Desenvolvedores
+Contato dos emails institucionais dos desenvolvedores por trás dessa maravilha de software:
+
+[![Gmail Badge](https://img.shields.io/badge/-Ruan%20Nunes-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ruan.nunes@arapiraca.ufal.br)](mailto:ruan.nunes@arapiraca.ufal.br)
+[![Gmail Badge](https://img.shields.io/badge/-Josué%20Silva-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ruan.nunes@arapiraca.ufal.br)](mailto:josue.silva@arapiraca.ufal.br)
+[![Gmail Badge](https://img.shields.io/badge/-Adryan%20Almeida-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ruan.nunes@arapiraca.ufal.br)](mailto:adryan.almeida@arapiraca.ufal.br)
+
+## Endereço
+Endereço relativo à Universidade Federal de Alagoas - Campus Arapiraca 
+
+Av. Manoel Severino Barbosa - Bom Sucesso, Arapiraca - AL, 57309-005
+
+## Prmeiro ano disponível
+O aplicativo estará disponível ao fim do "projeto integrador", logo, ainda será possível usar em 2021. 
+
+
+## Hardware sugerido
+Para o aplicativo no modo "força bruta" e para os exemplos que conseguimos, foram necessários:
+
+* Processador: i7-7700k
+* RAM: 16gb
+* HD: pelo menos 1GB
+* OS: Windows 10 ou Linux
+* Softwares necessários: Python 3
+  
+## Disponibilidade
+Disponível no [*GitHub*](https://github.com/adryan30/machx-go)
+
+## Custo
+ Todas as ferramentas utilizadas são gratuitas.
+
+
