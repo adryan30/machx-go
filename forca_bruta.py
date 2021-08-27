@@ -1,5 +1,7 @@
 # Implementação do algoritmo de força bruta
-from itertools import *
+from itertools import permutations
+from timeit import default_timer as timer
+
 
 def gerar_caminhos(matrix):
     # Extrai os nodos da matrix
@@ -17,6 +19,7 @@ def gerar_caminhos(matrix):
         caminho.append(caminho[0])
 
     return nodos, lista_arvore
+
 
 def forca_bruta(matrix):
     # Gera todos os caminhos possiveis
@@ -37,22 +40,28 @@ def forca_bruta(matrix):
     # Calcula o ciclo de menor custo
     menor_custo = min(lista_custo)
     indice_menor_custo = lista_custo.index(menor_custo)
-    matrix_saida = ["Força Bruta", menor_custo, lista_arvore[indice_menor_custo]]
+    matrix_saida = ["Força Bruta", menor_custo,
+                    lista_arvore[indice_menor_custo]]
 
     return matrix_saida
 
 
-matrix = [[0, 8, 50, 31, 12, 48, 36, 2, 5, 39, 10],
-          [8, 0, 38, 9, 33, 37, 22, 6, 4, 14, 32],
-          [50, 38, 0, 11, 55, 1, 23, 46, 41, 17, 52],
-          [31, 9, 11, 0, 44, 13, 16, 19, 25, 18, 42],
-          [12, 33, 55, 44, 0, 54, 53, 30, 28, 45, 7],
-          [48, 37, 1, 13, 54, 0, 26, 47, 40, 24, 51],
-          [36, 22, 23, 16, 53, 26, 0, 29, 35, 34, 49],
-          [2, 6, 46, 19, 30, 47, 29, 0, 3, 27, 15],
-          [5, 4, 41, 25, 28, 40, 35, 3, 0, 20, 21],
-          [39, 14, 17, 18, 45, 24, 34, 27, 20, 0, 43],
-          [10, 32, 52, 42, 7, 51, 49, 15, 21, 43, 0]]
+matrix = [[0, 300, 352, 466, 217, 238, 431, 336, 451,  47, 415, 515, ],
+          [300,   0, 638, 180, 595, 190, 138, 271, 229, 236, 214, 393, ],
+          [352, 638,   0, 251,  88, 401, 189, 386, 565, 206, 292, 349, ],
+          [466, 180, 251,   0, 139, 371, 169, 316, 180, 284, 206, 198, ],
+          [217, 595,  88, 139,   0, 310, 211, 295, 474, 130, 133, 165, ],
+          [238, 190, 401, 371, 310,   0, 202, 122, 378, 157, 362, 542, ],
+          [431, 138, 189, 169, 211, 202,   0, 183,  67, 268, 117, 369, ],
+          [336, 271, 386, 316, 295, 122, 183,   0, 483, 155, 448, 108, ],
+          [451, 229, 565, 180, 474, 378,  67, 483,   0, 299, 246, 418, ],
+          [47, 236, 206, 284, 130, 157, 268, 155, 299,   0, 202, 327, ],
+          [415, 214, 292, 206, 133, 362, 117, 448, 246, 202,   0, 394, ],
+          [515, 393, 349, 198, 165, 542, 368, 108, 418, 327, 394,   0, ]]
 
-print(forca_bruta(matrix))
 
+start = timer()
+resultado = forca_bruta(matrix)
+end = timer()
+print(resultado)
+print(f'{end - start}s')
